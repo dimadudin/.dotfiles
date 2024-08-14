@@ -58,7 +58,7 @@ reset_prompt(){
   return 0
 }
 setopt prompt_subst
-autoload -U add-zsh-hook 
+autoload -U add-zsh-hook
 add-zsh-hook precmd reset_prompt
 PROMPT='${path_prompt}${git_promt}${prompt_sign}'
 
