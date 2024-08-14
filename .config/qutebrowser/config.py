@@ -45,11 +45,11 @@ c.colors.webpage.preferred_color_scheme = "dark"
 
 c.completion.timestamp_format = "%d-%m-%Y %H:%M"
 
-# c.hints.padding = {}
 c.hints.radius = 0
 
 c.content.autoplay = False
 c.content.javascript.clipboard = "access-paste"
+c.content.blocking.method = "both"
 
 config.bind(
     "xx",
