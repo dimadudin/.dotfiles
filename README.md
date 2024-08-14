@@ -4,7 +4,7 @@ These are my config files.
 
 ## Installation
 
-Get the SSH keys for github.
+Get the SSH keys for github. Don't forget to chown and chmod.
 Create personal/ and work/ dirs in the home directory.
 
 Install git, clone the repo:
