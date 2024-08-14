@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+list=~/.config/tmux/man-list
+selected=$(cat $list | fzf) || exit 0
+tmux neww bash -c "man $selected"
