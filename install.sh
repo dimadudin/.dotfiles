@@ -10,6 +10,7 @@ pacman -S --noconfirm python-debugpy delve
 pacman -S --noconfirm unzip fd ripgrep fzf jq stow pass
 # Daemons
 pacman -S --noconfirm keyd
+cat ./keyd.conf > /etc/keyd/default.conf
 # Fonts
 pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji
 # ZSH
