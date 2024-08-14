@@ -11,6 +11,7 @@ pacman -S --noconfirm unzip fd ripgrep fzf jq stow pass
 # Daemons
 pacman -S --noconfirm keyd
 cat ./keyd.conf > /etc/keyd/default.conf
+systemctl enable keyd
 # Fonts
 pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji
 # ZSH
