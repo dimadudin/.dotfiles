@@ -23,7 +23,7 @@ sudo $HOME/personal/.dotfiles/install.sh
 Stow the config into the home directory:
 
 ```bash
-stow --dir="$HOME/personal/.dotfiles" --target="$HOME" .
+stow --dir="$HOME/personal/.dotfiles" --target="$HOME" --no-folding .
 ```
 
 Change the default shell to zsh:

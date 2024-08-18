@@ -1,8 +1,6 @@
-.config/qutebrowser/bookmarks/*
-.config/qutebrowser/greasemonkey/*
-.config/qutebrowser/quickmarks
-keyd.conf
-.git
-.gitignore
-README.md
+\.git
+\.gitignore
+^/README.*
+^/TODO.*
 install.sh
+keyd.conf
