@@ -1,4 +1,10 @@
+typeset -U path
 path=("$HOME/.local/bin" $path)
+path+=("$(go env GOBIN)")
+path+=("$(go env GOPATH)/bin")
+
+path+=("$HOME/.dotnet/tools")
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 export XDG_CONFIG_HOME=$HOME/.config
 

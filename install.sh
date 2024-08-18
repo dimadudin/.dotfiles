@@ -5,9 +5,9 @@ pacman -S --noconfirm python lua nodejs rust go
 # Package managers
 pacman -S --noconfirm python-pip luarocks npm
 # PL-specific tooling
-pacman -S --noconfirm python-debugpy delve
+pacman -S --noconfirm python-debugpy delve go-tools
 # CLI tools
-pacman -S --noconfirm unzip fd ripgrep fzf jq stow pass
+pacman -S --noconfirm man unzip fd ripgrep fzf jq stow pass
 # Daemons
 pacman -S --noconfirm keyd
 cat ./keyd.conf > /etc/keyd/default.conf
