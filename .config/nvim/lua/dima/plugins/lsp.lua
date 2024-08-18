@@ -46,6 +46,7 @@ return {
         bashls = {},
         gopls = {},
         pyright = {},
+        csharp_ls = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -59,8 +60,10 @@ return {
       local tools = {
         'stylua',
         'black',
+        'csharpier',
         'delve',
         'debugpy',
+        'netcoredbg',
       }
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       local cmp_capabilities = require('cmp_nvim_lsp').default_capabilities()

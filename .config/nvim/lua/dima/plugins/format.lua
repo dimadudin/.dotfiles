@@ -5,6 +5,7 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         python = { 'black' },
+        cs = { 'csharpier' },
       },
       format_on_save = {
         lsp_format = 'fallback',

@@ -7,6 +7,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     'nvim-neotest/neotest-python',
     'fredrikaverpil/neotest-golang',
+    'Issafalcon/neotest-dotnet',
   },
   config = function()
     local neotest = require 'neotest'
@@ -15,6 +16,7 @@ return {
       adapters = {
         require 'neotest-python',
         require 'neotest-golang',
+        require 'neotest-dotnet',
       },
     }
     vim.keymap.set('n', '<leader>tc', neotest.run.run)

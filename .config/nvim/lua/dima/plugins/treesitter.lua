@@ -9,6 +9,7 @@ return {
         'bash',
         'python',
         'c',
+        'c_sharp',
         'go',
         'lua',
         'luadoc',

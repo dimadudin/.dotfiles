@@ -16,6 +16,28 @@ return {
     require('dap-go').setup()
     require('dap-python').setup()
 
+    dap.adapters.coreclr = {
+      type = 'executable',
+      command = vim.fn.exepath 'netcoredbg',
+      args = { '--interpreter=vscode' },
+      options = {
+        detached = false,
+      },
+    }
+
+    dap.configurations.cs = {
+      {
+        type = 'coreclr',
+        name = 'Launch File',
+        request = 'launch',
+        ---@diagnostic disable-next-line: redundant-parameter
+        program = function()
+          return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+        end,
+        cwd = '${workspaceFolder}',
+      },
+    }
+
     dap.listeners.after.event_initialized['dapui_config'] = dapui.open
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
