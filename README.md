@@ -1,6 +1,6 @@
 # .dotfiles
 
-These are my config files.
+Config files for Archlinux
 
 ## Installation
 
@@ -14,20 +14,14 @@ pacman -S git
 git clone git@github.com:dimadudin/.dotfiles.git $HOME/personal/.dotfiles
 ```
 
-Run the install.sh script:
+Run the root-setup.sh script:
 
 ```bash
-sudo $HOME/personal/.dotfiles/install.sh
+sudo $HOME/personal/.dotfiles/root-setup.sh
 ```
 
-Stow the config into the home directory:
+Run the user-setup.sh script:
 
 ```bash
-stow --dir="$HOME/personal/.dotfiles" --target="$HOME" --no-folding .
-```
-
-Change the default shell to zsh:
-
-```bash
-chsh -s /usr/bin/zsh
+sudo $HOME/personal/.dotfiles/user-setup.sh
 ```

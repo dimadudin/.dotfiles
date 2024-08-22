@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-list=~/.config/tmux/cht-list
-selected=$(cat $list | fzf) || exit 0
-read -p "query: " query
-query=$(echo $query | tr ' ' '+')
-tmux neww bash -c "curl cht.sh/$selected/$query | $MANPAGER"
