@@ -1,7 +1,7 @@
 typeset -U path
 
 path=("$HOME/.local/bin" $path)
-path+=("$(go env GOBIN)")
+path+=("$(go env GOPATH)/bin")
 
 export XDG_CONFIG_HOME=$HOME/.config
 

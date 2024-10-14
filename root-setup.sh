@@ -1,17 +1,22 @@
 #!/usr/bin/env bash
 
-# Programming languages
-pacman -S --noconfirm python lua nodejs rust go
-# Package managers
-pacman -S --noconfirm python-pip luarocks npm
-# PL-specific tooling
-pacman -S --noconfirm python-debugpy delve go-tools
+# Python
+pacman -S --noconfirm python python-pip python-debugpy
+# Lua
+pacman -S --noconfirm lua luarocks nodejs
+# Node.js
+pacman -S --noconfirm nodejs npm
+# Go
+pacman -S --noconfirm go go-tools delve
+# Rust
+pacman -S --noconfirm rust
 # CLI tools
 pacman -S --noconfirm man-db unzip fd ripgrep fzf jq stow pass
 # Daemons
 pacman -S --noconfirm keyd
 # Fonts
-pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols noto-fonts-cjk noto-fonts-emoji
+pacman -S --noconfirm ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols \
+    noto-fonts-cjk noto-fonts-emoji
 # ZSH
 pacman -S --noconfirm zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
 git clone https://github.com/Aloxaf/fzf-tab /usr/share/zsh/plugins/fzf-tab

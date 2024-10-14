@@ -8,6 +8,7 @@ general {
 
 order += "disk /"
 order += "load"
+order += "ethernet _first_"
 order += "wireless _first_"
 order += "volume master"
 order += "battery all"
@@ -20,6 +21,12 @@ disk "/" {
 
 load {
         format = "[LOAD %1min]"
+        separator = false
+}
+
+ethernet _first_ {
+        format_up = "[E %speed]"
+        format_down = "[E down]"
         separator = false
 }
 

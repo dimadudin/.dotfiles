@@ -1,3 +1,0 @@
-- fork archinstall
-- rm JetBrainsMono package from install and just store the basic ones here
-- consider ansible to merge password-store with this and automate install

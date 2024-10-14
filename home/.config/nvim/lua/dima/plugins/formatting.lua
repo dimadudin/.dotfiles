@@ -7,6 +7,7 @@ return {
         python = { 'black' },
         cs = { 'csharpier' },
         lua = { 'stylua' },
+        html = { 'prettier' },
       },
       format_on_save = {
         lsp_format = 'fallback',
