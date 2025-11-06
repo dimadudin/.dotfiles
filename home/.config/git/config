@@ -1,7 +1,0 @@
-[user]
-	name = Dima Dudin
-	email = dmitriy.i.dudin@gmail.com
-[init]
-	defaultBranch = master
-[pull]
-	rebase = true

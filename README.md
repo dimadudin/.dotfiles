@@ -1,22 +1,19 @@
 # .dotfiles
 
-Config files for Archlinux
+Config files for Omarchy
 
 ## Installation
 
 Get the SSH keys for github. Don't forget to chown and chmod.
-Create personal/ and work/ dirs in the home directory.
+Create Public/ and Work/ dirs in the home directory for tmux sessionizer support.
 
 Install git, clone the repo:
 
 ```bash
 pacman -S git
-git clone git@github.com:dimadudin/.dotfiles.git $HOME/personal/.dotfiles
+git clone git@github.com:dimadudin/.dotfiles.git $HOME/Public/.dotfiles
+```
+```
 ```
 
-Run the root-setup.sh and user-setup scripts:
-
-```bash
-sudo $HOME/personal/.dotfiles/root-setup.sh &&
-$HOME/personal/.dotfiles/user-setup.sh
-```
+Use stow or just drop files into .config/ or whatever, idc

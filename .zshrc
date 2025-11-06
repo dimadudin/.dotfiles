@@ -1,0 +1,10 @@
+source ~/.config/zsh/shell
+source ~/.config/zsh/init
+source ~/.config/zsh/envs
+source ~/.config/zsh/prompt
+source ~/.config/zsh/inputrc
+
+# source from Omarchy
+source ~/.local/share/omarchy/default/bash/aliases
+source ~/.local/share/omarchy/default/bash/functions
+source ~/.local/share/omarchy/default/bash/envs

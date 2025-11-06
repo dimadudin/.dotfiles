@@ -1,0 +1,26 @@
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=$HISTSIZE
+
+# sane defaults
+setopt inc_append_history share_history hist_ignore_all_dups
+setopt autocd no_beep interactivecomments
+unsetopt nomatch
+
+# Set complete path
+export PATH="./bin:$HOME/.local/bin:$PATH"
+set +h
+
+# completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+bindkey -e
+
+autoload -U edit-command-line
+zle -N edit-command-line
+
+zle_highlight+=(paste:none)
