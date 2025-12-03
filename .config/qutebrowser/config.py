@@ -51,4 +51,4 @@ c.content.autoplay = False
 c.content.javascript.clipboard = "access-paste"
 c.content.blocking.method = "both"
 
-config.source("lackluster.py")
+config.source("theme.py")
