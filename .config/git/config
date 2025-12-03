@@ -1,6 +1,6 @@
 # See https://git-scm.com/docs/git-config
 [user]
-	name = Dima Dudin
+	name = dimadudin
 	email = dmitriy.i.dudin@gmail.com
 [alias]
 	co = checkout
