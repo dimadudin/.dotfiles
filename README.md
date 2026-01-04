@@ -57,6 +57,7 @@ git clone https://github.com/Aloxaf/fzf-tab /usr/share/zsh/plugins/fzf-tab
 ### pass
 
 Install pass with omarchy menu
+
 Fetch gpg keys and install password store [docs](https://www.passwordstore.org)
 
 ### qutebrowser
@@ -66,7 +67,10 @@ Install python-adblock dep with omarchy menu
 ### Misc
 
 Install a theme
+
 Install relevant dev envs with omarchy menu
 (most dev envs require a pkg to work with neovim)
+
 Install relevant LazyExtras in neovim
+
 Make sure to --version and :checkhealth
