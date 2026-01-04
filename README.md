@@ -2,20 +2,32 @@
 
 Configuration files for Omarchy
 
-## Installation
-
-Create Public/ and Work/ dirs in $HOME:
+## Generating SSH keys
 
 ```bash
-mkdir $HOME/Public $HOME/Work
+ssh-keygen -t ed25519 -C "<email>"
+Enter file in which to save the key ($HOME/.ssh/id_ed25519): <path>/<key name>
+Enter passphrase for "<key name>" (empty for no passphrase):
+Enter same passphrase again:
 ```
 
-Sign into github. Generate and link SHH keys: [gh docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-Clone repo:
+## Adding key to ssh-agent
+
+```bash
+ssh-add <path>/<key name>
+```
+
+## Adding key to github
+
+See: [github docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+## Installation
 
 ```bash
 git clone git@github.com:dimadudin/.dotfiles.git $HOME/Public/.dotfiles
 ```
+
+Install stow with omarchy menu
 
 Create symlinks:
 
@@ -24,24 +36,37 @@ stow --dir="$HOME/personal/.dotfiles" --target="$HOME" --no-folding --adopt .
 git restore .
 ```
 
-Install (zsh, tmux, pass, stow, qutebrowser)(omarchy menu).
+## Post installation
 
-Make zsh the default shell:
+Install zsh with omarchy menu.
+
+### ZSH
 
 ```bash
 chsh -s $(which zsh)
 ```
 
-Install (zsh-autosuggestions, zsh-syntax-highlighting, python-adblock)(omarchy menu).
+Install zsh-autosuggestions, zsh-syntax-highlighting with omarchy menu
 
-Install (fzf-tab) using the git repo link:
+Install fzf-tab:
 
 ```bash
 git clone https://github.com/Aloxaf/fzf-tab /usr/share/zsh/plugins/fzf-tab
 ```
 
-Install [the theme](https://github.com/sc0ttman/omarchy-one-dark-pro-theme.git)(omarchy menu).
+### pass
 
-Install relevant dev envs(omarchy menu).
+Install pass with omarchy menu
+Fetch gpg keys and install password store [docs](https://www.passwordstore.org)
 
-Install relevant LazyExtras in neovim.
+### qutebrowser
+
+Install python-adblock dep with omarchy menu
+
+### Misc
+
+Install a theme
+Install relevant dev envs with omarchy menu
+(most dev envs require a pkg to work with neovim)
+Install relevant LazyExtras in neovim
+Make sure to --version and :checkhealth

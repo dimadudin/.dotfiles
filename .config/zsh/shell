@@ -8,10 +8,6 @@ setopt inc_append_history share_history hist_ignore_all_dups
 setopt autocd no_beep interactivecomments
 unsetopt nomatch
 
-# Set complete path
-export PATH="./bin:$HOME/.local/bin:$PATH"
-set +h
-
 # completion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -24,3 +20,6 @@ autoload -U edit-command-line
 zle -N edit-command-line
 
 zle_highlight+=(paste:none)
+
+# Ensure command hashing is off for mise
+set +h

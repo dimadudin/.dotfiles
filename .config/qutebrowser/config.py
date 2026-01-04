@@ -11,7 +11,7 @@ c.tabs.min_width = 10
 c.downloads.position = "bottom"
 c.downloads.remove_finished = 1000
 
-c.fonts.default_family = "CaskaydiaMono NF"
+c.fonts.default_family = "Adwaita Mono"
 c.fonts.default_size = "12pt"
 c.fonts.completion.category = "bold default_size default_family"
 c.fonts.completion.entry = "default_size default_family"
@@ -29,12 +29,12 @@ c.fonts.tabs.selected = "default_size default_family"
 c.fonts.tabs.unselected = "default_size default_family"
 c.fonts.tooltip = "default_size default_family"
 
-c.fonts.web.family.cursive = "CaskaydiaMono NF"
-c.fonts.web.family.fantasy = "CaskaydiaMono NF"
-c.fonts.web.family.fixed = "CaskaydiaMono NF"
-c.fonts.web.family.sans_serif = "CaskaydiaMono NF"
-c.fonts.web.family.serif = "CaskaydiaMono NF"
-c.fonts.web.family.standard = "CaskaydiaMono NF"
+c.fonts.web.family.cursive = "Adwaita Mono"
+c.fonts.web.family.fantasy = "Adwaita Mono"
+c.fonts.web.family.fixed = "Adwaita Mono"
+c.fonts.web.family.sans_serif = "Adwaita Mono"
+c.fonts.web.family.serif = "Adwaita Mono"
+c.fonts.web.family.standard = "Adwaita Mono"
 
 c.fonts.web.size.default = 18
 c.fonts.web.size.default_fixed = 18

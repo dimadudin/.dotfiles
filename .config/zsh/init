@@ -10,6 +10,10 @@ if command -v zoxide &> /dev/null; then
   eval "$(zoxide init zsh)"
 fi
 
+if command -v try &> /dev/null; then
+  eval "$(try init ~/Work/tries)"
+fi
+
 if command -v fzf &> /dev/null; then
   if [[ -f /usr/share/fzf/completion.zsh ]]; then
     source /usr/share/fzf/completion.zsh
@@ -29,6 +33,5 @@ if [ -d /usr/share/zsh/plugins/zsh-autosuggestions ]; then
 fi
 
 if [ -d /usr/share/zsh/plugins/zsh-syntax-highlighting ]; then
-  # starship must init before syntax-highlighting
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
