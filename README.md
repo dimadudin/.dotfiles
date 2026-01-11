@@ -32,7 +32,7 @@ Install stow with omarchy menu
 Create symlinks:
 
 ```bash
-stow --dir="$HOME/personal/.dotfiles" --target="$HOME" --no-folding --adopt .
+stow --dir="$HOME/Public/.dotfiles" --target="$HOME" --no-folding --adopt .
 git restore .
 ```
 
@@ -62,11 +62,9 @@ Fetch gpg keys and install password store [docs](https://www.passwordstore.org)
 
 ### qutebrowser
 
-Install python-adblock dep with omarchy menu
+Install qutebrowser and python-adblock dependency with omarchy menu
 
 ### Misc
-
-Install a theme
 
 Install relevant dev envs with omarchy menu
 (most dev envs require a pkg to work with neovim)
