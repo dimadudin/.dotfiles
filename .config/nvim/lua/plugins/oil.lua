@@ -32,7 +32,7 @@ return {
         show_hidden = true,
       },
     })
-    vim.keymap.set("n", "<leader>.", vim.cmd.Oil, {})
+    vim.keymap.set("n", "<leader>o", vim.cmd.Oil, {})
   end,
   lazy = false,
 }

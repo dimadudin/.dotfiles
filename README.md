@@ -38,24 +38,17 @@ git restore .
 
 ## Post installation
 
-Install zsh with omarchy menu.
+### zsh
 
-### ZSH
-
-```bash
-chsh -s $(which zsh)
-```
-
-Install zsh-autosuggestions, zsh-syntax-highlighting with omarchy menu
-
-Install fzf-tab:
+Install omarchy-zsh and run
 
 ```bash
-git clone https://github.com/Aloxaf/fzf-tab /usr/share/zsh/plugins/fzf-tab
+omarchy-setup-zsh
 ```
 
 ### pass
 
+TODO: look [into](https://github.com/basecamp/omarchy/issues/2510)
 Install pass with omarchy menu
 
 Fetch gpg keys and install password store [docs](https://www.passwordstore.org)

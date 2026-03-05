@@ -1,4 +1,5 @@
 # See https://git-scm.com/docs/git-config
+
 [user]
 	name = dimadudin
 	email = dmitriy.i.dudin@gmail.com
